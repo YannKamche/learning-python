@@ -44,12 +44,83 @@ print(multiline)
 sentence = "I'm back at work!\tHey!\n\nWhere's this at\\located?"
 print(sentence)
 
-# String Methods: Methods are functions called on the string class
-print(fullName)
-print(fullName.lower());
-print(fullName.upper());
-print(fullName);
+# # String Methods: Methods are functions called on the string class
+# print(fullName)
+# print(fullName.lower());
+# print(fullName.upper());
+# print(fullName);
 
-print(multiline.title()) # capitalizes the statement
-print(multiline.replace("Hey,", "Yo!"))
+# print(multiline.title()) # capitalizes the statement
+# print(multiline.replace("Hey,", "Yo!"))
+# print(multiline)
+
+# print(len(multiline))
+# multiline += "                        " # Add some spacing after multiline
+# print(multiline)
+# multiline = "        " + multiline
+# print(len(multiline))
+# print(multiline)
+print(len(multiline))
 print(multiline)
+multiline += "                        " # Add some spacing after multiline
+print(len(multiline))
+
+print(len(multiline.rstrip()))
+
+print("\n\n\n");
+
+# Build a menu
+title = "menu".upper()
+print(title.center(20, "="))
+
+
+print("\n")
+print("Fufu and Eru".ljust(16, ".") + "$1".rjust(10))
+print("Fried Rice".ljust(16, ".") + "$1".rjust(10))
+
+# string index values
+print(firstName[1:])
+
+# Some methods reutrn boolean data
+print(firstName.startswith("Y"))
+print(lastName.endswith("Z")); 
+
+# Boolean data type
+# myValue = True
+# x = bool(False)
+# print(type(x) == bool)
+# print(x)
+# print(isinstance(myValue, bool))
+# print(myValue)
+
+# Numeric data types
+
+# integer type
+price = 100
+best_price = int(80)
+print(type(price))
+print(isinstance(best_price, int))
+
+# float type
+gpa = 3.28
+y = float(1.1)
+print(type(gpa))
+
+# complex type
+comp_value = 5+3j
+print(type(comp_value))
+print(comp_value.real)
+print(comp_value.imag)
+
+# Built-in functions for number
+
+print(abs(gpa))
+print(round(gpa * -1))
+print(round(gpa))
+
+print(round(gpa, 1))
+
+import math
+
+print(math.pi)
+print(round(math.pi, 4))
