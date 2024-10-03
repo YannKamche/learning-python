@@ -1,3 +1,4 @@
+import math
 # Naming conventions in python
 
 # literal assignments
@@ -120,7 +121,20 @@ print(round(gpa))
 
 print(round(gpa, 1))
 
-import math
+print(math.pi)
+print(round(math.pi, 4)) #1:20:03
 
 print(math.pi)
-print(round(math.pi, 4))
+print(math.sqrt(64))
+print(math.ceil(gpa))
+print(math.floor(gpa))
+
+# casting a string to a number
+string = "237"
+number = int(string)
+print(type(number))
+print(isinstance(number, int))
+
+# Erro if you attempt to cast incorrect data
+zip_value = int("New York");
+print(zip_value)
